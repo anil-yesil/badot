@@ -1,0 +1,123 @@
+/* Base styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for the form */
+.create-event-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+/* Form Title */
+.create-event-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form fields */
+form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  margin-top: 16px;
+  color: #444;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #fff;
+  transition: border 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+/* Venue and file upload controls */
+.venue-request {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.venue-request button {
+  margin-left: 12px;
+  background-color: transparent;
+  color: #4a90e2;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.venue-request button:hover {
+  color: #1c64b4;
+}
+
+/* File input */
+input[type="file"] {
+  margin-top: 8px;
+}
+
+/* Image preview */
+.image-preview {
+  margin-top: 10px;
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Submit button */
+button[type="submit"] {
+  width: 100%;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 18px;
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #357abd;
+}
+
+/* Error or success messages */
+.message {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 15px;
+}
+
+.message.success {
+  color: green;
+}
+
+.message.error {
+  color: red;
+}

@@ -1,0 +1,74 @@
+/* SeatSelection.css */
+
+.seat-selection-container {
+  max-width: 400px;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  justify-items: center;
+}
+
+.seat-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  border: 2px solid #3498db;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.seat-button:hover:not(:disabled):not(.selected) {
+  background-color: #d6eaf8;
+}
+
+.seat-button.selected {
+  background-color: #2ecc71;
+  border-color: #27ae60;
+  color: white;
+  box-shadow: 0 0 10px #27ae60;
+}
+
+.seat-button.booked {
+  background-color: #bdc3c7;
+  border-color: #95a5a6;
+  cursor: not-allowed;
+  color: #7f8c8d;
+}
+
+.seat-button:disabled {
+  cursor: not-allowed;
+}
+
+.confirm-button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 8px;
+  border: none;
+  background-color: #2980b9;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirm-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}

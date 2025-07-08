@@ -1,0 +1,16 @@
+Flask
+Flask-MySQL
+Flask-Cors
+mysqlclient
+flask
+flask_sqlalchemy
+flask_cors
+PyJWT
+werkzeug
+
+PyMySQL
+SQLAlchemy
+reportlab
+psycopg2-binary
+
+qrcode[pil]
